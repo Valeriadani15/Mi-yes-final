@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Para mi Yes 💫</title>
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500&display=swap');
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background: #f4f7ed;
+      color: #304634;
+      font-family: 'DM Sans', sans-serif;
+      overflow-x: hidden;
+    }
+
+    section {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 60px 20px;
+    }
+
+    .container {
+      max-width: 850px;
+      width: 100%;
+      text-align: center;
+    }
+
+    #inicio {
+      background:
+        radial-gradient(circle at 20% 20%, #dcebd2 0, transparent 25%),
+        radial-gradient(circle at 80% 80%, #e5efd9 0, transparent 30%),
+        #f4f7ed;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .small {
+      font-size: .9rem;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      opacity: .65;
+      margin-bottom: 18px;
+    }
+
+    h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(3rem, 10vw, 6.5rem);
+      font-weight: 500;
+      line-height: 1;
+      margin-bottom: 25px;
+    }
+
+    .subtitle {
+      font-size: 1.15rem;
+      max-width: 500px;
+      margin: 0 auto 35px;
+      line-height: 1.7;
+    }
+
+    .button {
+      display: inline-block;
+      border: none;
+      background: #47654c;
+      color: white;
+      padding: 15px 32px;
+      border-radius: 50px;
+      font-size: 1rem;
+      cursor: pointer;
+      text-decoration: none;
+      transition: .3s ease;
+      box-shadow: 0 8px 25px rgba(48,70,52,.15);
+    }
+
+    .button:hover {
+      transform: translateY(-3px);
+      background: #38553d;
+    }
+
+    .leaf {
+      position: absolute;
+      font-size: 2rem;
+      opacity: .45;
+      animation: float 4s ease-in-out infinite;
+    }
+
+    .leaf.one {
+      top: 15%;
+      left: 10%;
+    }
+
+    .leaf.two {
+      bottom: 15%;
+      right: 10%;
+      animation-delay: 1s;
+    }
+
+    @keyframes float {
+      0%, 100% {
+        transform: translateY(0) rotate(0deg);
+      }
+
+      50% {
+        transform: translateY(-12px) rotate(5deg);
+      }
+    }
+
+    #comunicado {
+      background: #304634;
+      color: #f4f7ed;
+    }
+
+    .paper {
+      background: #f4f7ed;
+      color: #304634;
+      padding: 45px 35px;
+      border-radius: 25px;
+      max-width: 680px;
+      margin: auto;
+      box-shadow: 0 20px 60px rgba(0,0,0,.15);
+      transform: rotate(-1deg);
+    }
+
+    .stamp {
+      display: inline-block;
+      border: 2px solid #47654c;
+      padding: 8px 15px;
+      border-radius: 5px;
+      font-size: .75rem;
+      letter-spacing: 2px;
+      margin-bottom: 25px;
+    }
+
+    h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(2.2rem, 6vw, 4rem);
+      margin-bottom: 25px;
+    }
+
+    .paper p {
+      line-height: 1.8;
+      font-size: 1.05rem;
+      margin-bottom: 15px;
+    }
+
+    .ferret {
+      font-size: 4rem;
+      margin: 25px 0;
+    }
+
+    #recuerdos {
+      background: #e8f0df;
+    }
+
+    .section-title {
+      margin-bottom: 15px;
+    }
+
+    .section-text {
+      max-width: 550px;
+      margin: 0 auto 45px;
+      line-height: 1.7;
+    }
+
+    .photos {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 25px;
+      max-width: 650px;
+      margin: auto;
+    }
+
+    .photo {
+      aspect-ratio: 1/1;
+      background: #d3dfc9;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #617263;
+      font-size: .9rem;
+      box-shadow: 0 8px 20px rgba(48,70,52,.1);
+      overflow: hidden;
+    }
+
+    .photo:nth-child(1) {
+      transform: rotate(-2deg);
+    }
+
+    .photo:nth-child(2) {
+      transform: rotate(2deg);
+    }
+
+    .photo:nth-child(3) {
+      transform: rotate(1deg);
+    }
+
+    .photo:nth-child(4) {
+      transform: rotate(-2deg);
+    }
+
+    .photo img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    #mensaje {
+      background: #f4f7ed;
+    }
+
+    .message {
+      max-width: 680px;
+      margin: auto;
+      text-align: left;
+      background: white;
+      padding: 50px 45px;
+      border-radius: 25px;
+      box-shadow: 0 15px 50px rgba(48,70,52,.08);
+    }
+
+    .message .hello {
+      font-family: 'Playfair Display', serif;
+      font-size: 2rem;
+      margin-bottom: 25px;
+    }
+
+    .message p {
+      font-size: 1.08rem;
+      line-height: 1.9;
+      margin-bottom: 20px;
+    }
+
+    .heart {
+      text-align: center;
+      font-size: 2rem;
+      margin-top: 25px;
+    }
+
+    #final {
+      min-height: 70vh;
+      background: #304634;
+      color: #f4f7ed;
+    }
+
+    #final h2 {
+      margin-bottom: 20px;
+    }
+
+    #final p {
+      font-size: 1.1rem;
+      line-height: 1.8;
+      max-width: 500px;
+      margin: auto;
+    }
+
+    .final-ferret {
+      font-size: 4rem;
+      margin-bottom: 25px;
+    }
+
+    .love {
+      margin-top: 35px;
+      font-family: 'Playfair Display', serif;
+      font-size: 1.5rem;
+      font-style: italic;
+    }
+
+    @media(max-width:600px) {
+      .photos {
+        grid-template-columns: 1fr;
+      }
+
+      .message {
+        padding: 35px 25px;
+      }
+
+      .paper {
+        padding: 35px 25px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <section id="inicio">
+    <div class="leaf one">🌿</div>
+    <div class="leaf two">🍃</div>
+
+    <div class="container">
+      <div class="small">una pequeña sorpresa</div>
+
+      <h1>Para mi Yes 💫</h1>
+
+      <p class="subtitle">
+        Hoy pasó algo importante... y antes de que sigas con tu día,
+        quiero celebrar contigo.
+      </p>
+
+      <a href="#comunicado" class="button">abrir →</a>
+    </div>
+  </section>
+
+
+  <section id="comunicado">
+    <div class="container">
+
+      <div class="paper">
+
+        <div class="stamp">COMUNICADO</div>
+
+        <h2>Sobreviviste a tu examen.</h2>
+
+        <p>
+          Después de todo este tiempo de estudios, exámenes, trabajos,
+          estrés y probablemente ganas de mandarlos a la mierda...
+        </p>
+
+        <div class="ferret">🦦</div>
+
+        <p>
+          Se confirma que oficialmente <strong>Yes</strong> ha completado una etapa.
+        </p>
+
+        <p>
+          La investigación continúa para determinar cuántas personas
+          fueron mierdeadas durante el proceso.
+        </p>
+
+        <a href="#recuerdos" class="button">continuar →</a>
+
+      </div>
+    </div>
+  </section>
+
+
+  <section id="recuerdos">
+    <div class="container">
+
+      <div class="small">evidencia</div>
+
+      <h2 class="section-title">
+        Algunas pruebas de que eres tú 💚
+      </h2>
+
+      <p class="section-text">
+        Cuatro pequeños recuerdos de la persona que hoy estoy celebrando.
+      </p>
+
+      <div class="photos">
+
+        <div class="photo">FOTO 01</div>
+        <div class="photo">FOTO 02</div>
+        <div class="photo">FOTO 03</div>
+        <div class="photo">FOTO 04</div>
+
+      </div>
+
+      <br><br>
+
+      <a href="#mensaje" class="button">ahora sí... →</a>
+
+    </div>
+  </section>
+
+
+  <section id="mensaje">
+    <div class="container">
+
+      <div class="message">
+
+        <div class="hello">Corazón 💚</div>
+
+        <p>
+          Estoy muy orgullosa de ti. Hoy diste tu último examen y estoy
+          segura de que la diste toda, preciosa.
+        </p>
+
+        <p>
+          Quizá hasta mierdeaste a alguien en el camino, pero bueno,
+          es parte del sentimiento JSHDJS.
+        </p>
+
+        <p>
+          Te amo demasiado y estoy muy feliz de poder acompañarte en todo
+          este proceso, de verte crecer, aprender y construir poquito a
+          poquito la vida que quieres.
+        </p>
+
+        <p>
+          Me hace feliz poder estar presente en momentos como este y
+          celebrar contigo todo lo que vas consiguiendo.
+        </p>
+
+        <p>
+          Y espero poder seguir acompañándote en todo lo que venga,
+          en cada etapa, cada logro, cada nuevo proyecto y también en
+          los momentos no tan bonitos. Quiero seguir viendo cómo construyes
+          tu futuro y, si tú quieres, ser parte de él.
+        </p>
+
+        <p>
+          Hoy terminaste una etapa, corazón. Y espero que estés muy
+          orgullosa de ti también, porque yo lo estoy muchísimo.
+        </p>
+
+        <div class="heart">💚</div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <section id="final">
+
+    <div class="container">
+
+      <div class="final-ferret">🦦</div>
+
+      <h2>Bueno, ya.</h2>
+
+      <p>
+        Ahora anda a celebrar que terminaste, chef.
+      </p>
+
+      <p class="love">
+        Te amo, bobita. 💚
+      </p>
+
+    </div>
+
+  </section>
+
+</body>
+</html>
