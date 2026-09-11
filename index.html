@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -217,6 +218,29 @@
       width: 100%;
       height: 100%;
       object-fit: cover;
+      display: block;
+    }
+
+    /* MÚSICA */
+
+    .music-box {
+      margin: 35px auto 0;
+      padding: 18px 22px;
+      max-width: 400px;
+      background: rgba(255,255,255,.65);
+      border-radius: 20px;
+      box-shadow: 0 8px 25px rgba(48,70,52,.08);
+    }
+
+    .music-title {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.15rem;
+      margin-bottom: 12px;
+    }
+
+    audio {
+      width: 100%;
+      height: 40px;
     }
 
     #mensaje {
@@ -298,11 +322,15 @@
 
 <body>
 
+  <!-- INICIO -->
+
   <section id="inicio">
+
     <div class="leaf one">🌿</div>
     <div class="leaf two">🍃</div>
 
     <div class="container">
+
       <div class="small">una pequeña sorpresa</div>
 
       <h1>Para mi Yes 💫</h1>
@@ -312,26 +340,54 @@
         quiero celebrar contigo.
       </p>
 
-      <a href="#comunicado" class="button">abrir →</a>
+      <a href="#comunicado" class="button">
+        abrir →
+      </a>
+
+      <!-- MÚSICA -->
+
+      <div class="music-box">
+
+        <div class="music-title">
+          🎵 Una canción para ti
+        </div>
+
+        <audio controls>
+          <source src="musica.mp3" type="audio/mpeg">
+          Tu navegador no puede reproducir esta canción.
+        </audio>
+
+      </div>
+
     </div>
+
   </section>
 
 
+  <!-- COMUNICADO -->
+
   <section id="comunicado">
+
     <div class="container">
 
       <div class="paper">
 
-        <div class="stamp">COMUNICADO</div>
+        <div class="stamp">
+          COMUNICADO
+        </div>
 
-        <h2>Sobreviviste a tu examen.</h2>
+        <h2>
+          Sobreviviste a tu examen.
+        </h2>
 
         <p>
           Después de todo este tiempo de estudios, exámenes, trabajos,
           estrés y probablemente ganas de mandarlos a la mierda...
         </p>
 
-        <div class="ferret">🦦</div>
+        <div class="ferret">
+          🦦
+        </div>
 
         <p>
           Se confirma que oficialmente <strong>Yes</strong> ha completado una etapa.
@@ -342,17 +398,26 @@
           fueron mierdeadas durante el proceso.
         </p>
 
-        <a href="#recuerdos" class="button">continuar →</a>
+        <a href="#recuerdos" class="button">
+          continuar →
+        </a>
 
       </div>
+
     </div>
+
   </section>
 
 
+  <!-- RECUERDOS -->
+
   <section id="recuerdos">
+
     <div class="container">
 
-      <div class="small">evidencia</div>
+      <div class="small">
+        evidencia
+      </div>
 
       <h2 class="section-title">
         Algunas pruebas de que eres tú 💚
@@ -362,38 +427,52 @@
         Cuatro pequeños recuerdos de la persona que hoy estoy celebrando.
       </p>
 
+
+      <!-- FOTOS -->
+
       <div class="photos">
 
-  <div class="photo">
-    <img src="foto1.jpg" alt="Foto 1">
-  </div>
+        <div class="photo">
+          <img src="foto1.jpeg" alt="Foto 1">
+        </div>
 
-  <div class="photo">
-    <img src="foto2.jpg" alt="Foto 2">
-  </div>
+        <div class="photo">
+          <img src="foto2.jpeg" alt="Foto 2">
+        </div>
 
-  <div class="photo">
-    <img src="foto3.jpg" alt="Foto 3">
-  </div>
+        <div class="photo">
+          <img src="foto3.jpeg" alt="Foto 3">
+        </div>
 
-  <div class="photo">
-    <img src="foto4.jpg" alt="Foto 4">
-  </div>
+        <div class="photo">
+          <img src="foto4.jpeg" alt="Foto 4">
+        </div>
+
+      </div>
+
 
       <br><br>
 
-      <a href="#mensaje" class="button">ahora sí... →</a>
+      <a href="#mensaje" class="button">
+        ahora sí... →
+      </a>
 
     </div>
+
   </section>
 
 
+  <!-- MENSAJE -->
+
   <section id="mensaje">
+
     <div class="container">
 
       <div class="message">
 
-        <div class="hello">Corazón 💚</div>
+        <div class="hello">
+          Corazón 💚
+        </div>
 
         <p>
           Estoy muy orgullosa de ti. Hoy diste tu último examen y estoy
@@ -428,20 +507,30 @@
           orgullosa de ti también, porque yo lo estoy muchísimo.
         </p>
 
-        <div class="heart">💚</div>
+        <div class="heart">
+          💚
+        </div>
 
       </div>
+
     </div>
+
   </section>
 
+
+  <!-- FINAL -->
 
   <section id="final">
 
     <div class="container">
 
-      <div class="final-ferret">🦦</div>
+      <div class="final-ferret">
+        🦦
+      </div>
 
-      <h2>Bueno, ya.</h2>
+      <h2>
+        Bueno, ya.
+      </h2>
 
       <p>
         Ahora anda a celebrar que terminaste, chef.
@@ -457,3 +546,4 @@
 
 </body>
 </html>
+```
